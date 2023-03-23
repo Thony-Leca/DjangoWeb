@@ -1,0 +1,28 @@
+{% extends 'shop/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <img src="{% static 'img/ %'}" alt="Generic product" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <span class="text-primary float-end">${{ servicio.price }}.00</span>
+                    <h5>{{ servicio }}</h5>
+                    <p>{{ servicio.description }}</p>
+                    <form>
+                        {% csrf_token %}
+                        <div class="input-group mb-3">
+                            <a href=""></a><button type="button" class="btn btn-primary">Ponerse en contacto</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
