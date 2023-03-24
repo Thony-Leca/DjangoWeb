@@ -33,7 +33,7 @@ class Cliente(models.Model):
     name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     email = models.EmailField(max_length=255)
-    telephone = PhoneNumberField(unique = True, null = False, blank = False)
+    telephone = models.CharField(max_length=20)
     description = models.TextField()
     atendido = models.BooleanField(default=False)
 

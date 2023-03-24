@@ -58,6 +58,6 @@ def clienteCreate(request):
             telephone=telephone,
             description=description,
         )
-        return redirect('shop:index', pk=cliente.id)
+        return redirect('shop:index')
     return render(request, 'shop/service/contact.html')
 
