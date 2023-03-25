@@ -30,11 +30,13 @@
             </div>
             <br>
         </div>
-        <div class="container mt-5">
+        <br>
+        <div class="container marketing border-top">
+            <br>    
             <h2>Clientes recientes</h2>
             <div class="row">
+                {% for cliente in clientes %}
                 <div class="col-lg-4">
-                    {% for cliente in clientes %}
                     <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="{%static 'img/1995515.png'%}"><rect width="100%" height="100%" fill="#777"/></img>
                     <h4>{{cliente.name}} {{cliente.last_name}}</h4>
                 </div>
