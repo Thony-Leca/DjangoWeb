@@ -1,5 +1,7 @@
 .mg{
     margin: 30px;
+    bottom: 0;
+    align-self: flex-end;
 }
 .img{
     background-size: cover;
@@ -16,4 +18,4 @@
     background-image: url('../img/img1.jpg');
     background-size: cover;
     background-position: center center;
-  }
+}

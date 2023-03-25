@@ -17,6 +17,17 @@ class ServiceDetail(DetailView):
     template_name = 'shop/service/service_detail.html'
     context_object_name = 'servicio'
 
+class CategoryList(ListView):
+    model = Category
+    second_model = Cliente
+    template_name = 'shop/service/list_category.html'
+    context_object_name = 'categorias'
+
+    def get_context_data(self, *args, **kwargs):
+        category = Category.objects.all()
+        clientes = Cliente.objects.all()
+        return {'clientes': clientes, 'categorias': category}
+
 class ServiceForm(forms.ModelForm):
     class Meta:
         model = Servicios

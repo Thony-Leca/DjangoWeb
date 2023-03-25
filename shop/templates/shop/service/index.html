@@ -31,17 +31,17 @@
         <div class="container head">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a href="{%url 'shop:index' %}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <img src="{%static 'img/1995515.png' %}" class="bi me-2" width="40" height="32">
+                <img src="{%static 'img/icon.jpg'%}" class="bi me-2" width="40" height="32">
                 <span class="fs-4">Enzo Martinez</span>
             </a>
 
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
-                <li class="nav-item"><a href="#lenguajes" class="nav-link">Lenguajes</a></li>
-                <li class="nav-item"><a href="{%url 'shop:repositorios' %}" class="nav-link">Repositorio</a></li>
-                <li class="nav-item"><a href="{%url 'shop:contact' %}" class="nav-link">Contacto</a></li>
-                <li class="nav-item"><a href="{%url 'shop:list' %}" class="nav-link">Servicio Técnico</a></li>
-                <li class="nav-item"><a href="{%url 'shop:about_me' %}" class="nav-link">Sobre mi</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active li-act" style="background-color: #212529;" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="#lenguajes" class="nav-link list" style="color: #212529;">Lenguajes</a></li>
+                <li class="nav-item"><a href="{%url 'shop:repositorios' %}" class="nav-link" style="color: #212529;">Repositorio</a></li>
+                <li class="nav-item"><a href="{%url 'shop:contact' %}" class="nav-link list" style="color: #212529;">Contacto</a></li>
+                <li class="nav-item"><a href="{%url 'shop:categorylist' %}" class="nav-link list" style="color: #212529;">Servicio Técnico</a></li>
+                <li class="nav-item"><a href="{%url 'shop:about_me' %}" class="nav-link list" style="color: #212529;">Sobre mi</a></li>
             </ul>
             </header>
         </div>
@@ -53,25 +53,25 @@
               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="bd-placeholder-img" width="100%" height="100%" src="{%static 'img/img2.jpg'%}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+              <div class="carousel-item active bg-light">
+                <img class="bd-placeholder-img" width="100%" height="100%" src="{%static 'img/imagen3.jpg'%}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
         
                 <div class="container">
                   <div class="carousel-caption text-start">
                     <h1>Enzo Martinez.</h1>
-                    <p>Estudiante, Técnico en Soporte Informatico, y <br>
+                    <p>Estudiante, Técnico en Soporte Informatico, Especialista en Python - Django y <br>
                       Programador Frontend - Backend.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Sobre mí</a></p>
+                    <p><a class="btn btn-lg btn-dark" href="#">Sobre mí</a></p>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img class="bd-placeholder-img" width="100%" height="100%" src="{%static 'img/img1.jpg'%}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+                <img class="bd-placeholder-img" width="100%" height="100%" src="{%static 'img/imagen7.jpg'%}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
                 <div class="container">
                   <div class="carousel-caption">
-                    <h1>Bienvenido</h1>
-                    <p>A mi primer portafolio web, relacionado a mi repositorio GitHub.</p>
-                    <p><a class="btn btn-lg btn-primary" href="https://github.com/EnzoMartinez01">GitHub</a></p>
+                    <h1>Si se imagina, se crea</h1>
+                    <p>Portafolio de proyectos, creado en Python.</p>
+                    <p><a class="btn btn-lg btn-dark" href="https://github.com/EnzoMartinez01">GitHub</a></p>
                   </div>
                 </div>
               </div>

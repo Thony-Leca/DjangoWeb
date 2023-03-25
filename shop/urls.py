@@ -9,5 +9,6 @@ urlpatterns = [
     path('', Index.as_view(), name='index'),
     path('about_me/', AboutMe.as_view(), name='about_me'),
     path('repositorios/', Repo.as_view(), name='repositorios'),
-    path('contact/', clienteCreate, name='contact')
+    path('contact/', clienteCreate, name='contact'),
+    path('category/', CategoryList.as_view(), name='categorylist')
 ]
