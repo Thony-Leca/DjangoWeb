@@ -58,7 +58,7 @@
     </main>
     <main>
         <div class="container">
-            <form class="row g-4" method="post">
+            <form class="row g-4" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="col-md-6">
                     <input class="form-control form-control-lg" type="text" name="name" placeholder="Nombres" aria-label=".form-control-lg">

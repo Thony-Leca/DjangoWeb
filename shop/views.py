@@ -31,7 +31,7 @@ class CategoryList(ListView):
 class ServiceForm(forms.ModelForm):
     class Meta:
         model = Servicios
-        fields = ['name', 'description', 'price', 'category']
+        fields = ['name', 'description', 'price', 'category', 'image']
     
     def clean_name(self):
         name = self.cleaned_data('name')
@@ -62,12 +62,14 @@ def clienteCreate(request):
         email = request.POST.get('email')
         telephone = request.POST.get('telephone')
         description = request.POST.get('description')
+        imagencli = request.POST.get('imagencli')
         cliente = Cliente.objects.create(
             name=name,
             last_name=last_name,
             email=email,
             telephone=telephone,
             description=description,
+            imagencli=imagencli,
         )
         return redirect('shop:index')
     return render(request, 'shop/service/contact.html')

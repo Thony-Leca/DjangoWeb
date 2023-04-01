@@ -18,6 +18,7 @@ class Servicios(models.Model):
     price = models.IntegerField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='servicio')
     is_active = models.BooleanField(default=True)
+    image = models.ImageField(upload_to='servicio', blank=True, null=True)
 
     class Meta:
         verbose_name_plural = 'Servicios'
@@ -36,6 +37,7 @@ class Cliente(models.Model):
     telephone = models.CharField(max_length=20)
     description = models.TextField()
     atendido = models.BooleanField(default=False)
+    imagencli = models.ImageField(upload_to='cliente', blank=True, null=True)
 
     class Meta:
         verbose_name_plural = "Clientes"
